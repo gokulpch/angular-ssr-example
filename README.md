@@ -40,17 +40,37 @@ angular-webapp   LoadBalancer   10.100.22.114   a71decbhsdbuuewjcndnjncjdnjcjndd
 ```
 
 ### Application Runnng on EKS as a Deployment
+
 ![ScreenShot](/images/ang-app-eks-1.png)
 
 ### Application - Pod on EKS
+
 ![ScreenShot](/images/ang-app-eks-2.png)
 
 ### Accessing Application using AWS LoadBalancer created by type:LoadBalancer
+
 ![ScreenShot](/images/ang-web.png)
 
 ## Deploying it on AWS ECS
 
 
+Create a ECR cluster with EC2 or you can just use Fargate for a Launch Type
+
+1. Create a New Task Definition:
+
+![ScreenShot](/images/ang-ecs-2.png)
+
+2. Select add container in the task definition and provide the container details (use the image available in dockerhub or your own image pushed to ECR)
+
+![ScreenShot](/images/ang-ecs-3.png)
+
+3. Run the task with the task definition created above
+
+![ScreenShot](/images/ang-ecs-4.png)
+
+4. Access the application using the IP information from the task run output
+
+![ScreenShot](/images/ang-ecs.png)
 
 ## Using ECR as Image Repository
 
