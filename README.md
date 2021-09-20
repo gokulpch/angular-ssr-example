@@ -39,6 +39,13 @@ NAME             TYPE           CLUSTER-IP      EXTERNAL-IP                     
 angular-webapp   LoadBalancer   10.100.22.114   a71decbhsdbuuewjcndnjncjdnjcjndd-651101815.us-west-1.elb.amazonaws.com   80:30231/TCP   3m58s
 ```
 
+### Application Runnng on EKS as a Deployment
 ![ScreenShot](/images/ang-app-eks-1.png)
+
+### Application - Pod on EKS
+![ScreenShot](/images/ang-app-eks-2.png)
+
+### Accessing Application using AWS LoadBalancer created by type:LoadBalancer
+![ScreenShot](/images/ang-web.png)
 
 ## Deploying it on AWS ECS
