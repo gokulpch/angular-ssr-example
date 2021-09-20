@@ -15,9 +15,9 @@ docker run -p 8080:80 angular-ssr-example:latest
 
 ## Image available at
 
-docker pull gokulpch/angular-ssr-universal:v1
 https://hub.docker.com/r/gokulpch/angular-ssr-universal
 
+<<<<<<< HEAD
 ## Deploying it on AWS EKS
 
 Need a running EKS cluster. Create a EKS Cluster using: https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html
@@ -37,3 +37,7 @@ angular-webapp   LoadBalancer   10.100.22.114   a71decbhsdbuuewjcndnjncjdnjcjndd
 ```
 
 ## Deploying it on AWS ECS
+=======
+docker pull gokulpch/angular-ssr-universal:v1
+
+>>>>>>> b33ca168243d6462fa77477cfaac7a36a9cf4139
