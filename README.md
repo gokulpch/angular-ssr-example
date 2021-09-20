@@ -12,3 +12,8 @@ Building and deploying the application on EKS and ECS for public consumption
 docker build . --file Dockerfile.ssr --build-arg ENV=dev --tag angular-ssr-example:latest
 docker run -p 8080:80 angular-ssr-example:latest
 ```
+
+## Image available at
+
+docker pull gokulpch/angular-ssr-universal:v1
+https://hub.docker.com/r/gokulpch/angular-ssr-universal
