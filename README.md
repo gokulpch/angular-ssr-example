@@ -39,4 +39,6 @@ NAME             TYPE           CLUSTER-IP      EXTERNAL-IP                     
 angular-webapp   LoadBalancer   10.100.22.114   a71decbhsdbuuewjcndnjncjdnjcjndd-651101815.us-west-1.elb.amazonaws.com   80:30231/TCP   3m58s
 ```
 
+![alt text](https://https://github.com/gokulpch/angular-ssr-example/blob/master/images/ang-app-eks-1.png?raw=true)
+
 ## Deploying it on AWS ECS
