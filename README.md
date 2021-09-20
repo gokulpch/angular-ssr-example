@@ -49,3 +49,34 @@ angular-webapp   LoadBalancer   10.100.22.114   a71decbhsdbuuewjcndnjncjdnjcjndd
 ![ScreenShot](/images/ang-web.png)
 
 ## Deploying it on AWS ECS
+
+
+
+## Using ECR as Image Repository
+
+Docker build the image and push it to your ECR.
+
+
+Get password and login to ECR:
+```
+aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin aws_account_id.dkr.ecr.us-east-1.amazonaws.com
+```
+
+Create a Repository on the default repo or as required:
+```
+aws ecr create-repository \     
+     --repository-name angular-universal/angular-ssr\     
+     --image-scanning-configuration scanOnPush=true \
+     --image-tag-mutability IMMUTABLE     
+     --region us-east-2
+```
+
+Tag and Push the image to ECR:
+
+```
+docker tag angular-universal-ssr:latest 900488099787.dkr.ecr.us-east-2.amazonaws.com/frontend/angular-node:v1
+```
+
+```
+docker push 900488099787.dkr.ecr.us-east-2.amazonaws.com/frontend/angular-universal-ssr:v1
+```
